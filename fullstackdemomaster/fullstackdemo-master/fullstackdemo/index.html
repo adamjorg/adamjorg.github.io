@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fullstack Demo</title>
+        <meta charset="UTF-8">
+    </head>
+    <body style="background-color:lightgreen;">
+        <div>
+        <h1>Fullstack Demo</h1>
+        <button onclick="getHighscore()">Get Specific Highscore</button>
+        <button onclick="getHighscores()">Get All Highscores</button>
+        <br><br><br><br>
+    </div>
+    <form>
+        <fieldset>
+            <legend><strong>Sign Up</strong></legend>
+            <input id="username-input" type="text"placeholder="Username">
+            <br>
+            <input id="password-original" type="password" placeholder="Password">
+            <br>
+            <input id="password-check" type="password" placeholder="Confirm Password">
+            <br><br>
+            <label for="DOB">Date of birth:</label> <input id="DOB" type="date">
+            <br><br>
+            <label for="favorite-color">Favorite color:</label> <input id="favorite-color" type="color">
+            <br><br>
+            <label for="number">Favorite number:</label> <input id="number" type="number">
+            <br><br><br>
+            <p><strong>Do you agree to our terms and conditions?</strong></p> 
+            <p>I agree to the terms and conditions:</p> <input id="terms-conditions" type="checkbox">
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Terms And Conditions</a>
+            <br><br>
+            <button onclick="ConfirmSignUp()">Confirm Sign Up</button>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Log In</strong></legend>
+            <input id="username-confirm" type="text" placeholder="Username">
+            <br>
+            <input id="password-confirm" type="password" placeholder="Password">
+            <br>
+            <button onclick="ConfirmlogIn()">Confirm logIn</button>
+        </fieldset>
+    </form>
+        <br><br><br><br><br><br>
+    <div>
+        <button onclick="insertHighscore()">Insert Highscore</button>
+        <button onclick="deleteHighscore()">Delete Highscore</button>
+        <button onclick="updateHighscore()">Update Highscore</button>
+    </div>
+   <div>
+         <p>Welcome to this webside. You can make an account or log in if you already have one. But they dont do anything!</p>
+         <br>
+         <p>Insert a highscore by pressing the "Insert Highscore" button. Get to see all highscores by pressing the "Get ALL Highscores" button.</p>
+        </div>
+    <br><br><br><br><br><br><br><br><br>
+  <div>
+        <button onclick="deleteUser()">Delete User</button>
+    </div>
+        
+        <script src="/app.js"></script>
+    </body>
+</html>
